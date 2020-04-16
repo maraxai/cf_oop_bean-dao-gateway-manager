@@ -118,9 +118,9 @@
 				WHERE
 					ID = <cfqueryparam 
 							cfsqltype="cf_sql_integer" 
-							value="#arguments.ID#" />
-							
+							value="#arguments.ID#" />							
 			</cfquery>
+
 			<cfcatch type="database">
 				<cfset boolSuccess = false />
 			</cfcatch>

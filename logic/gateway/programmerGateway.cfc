@@ -5,7 +5,7 @@
 		<cfset qAllRecords = '' />
 		<!--- SELECT Query --->
 		<cfquery name="qAllRecords" datasource="db_computerScience" username="mike" password="mySQL4webDev">
-			SELECT firstName, lastName, programmingLanguage
+			SELECT ID, firstName, lastName, programmingLanguage
 			FROM programmers
 		</cfquery>
 		<cfreturn qAllRecords />
@@ -18,7 +18,7 @@
 		<cfquery name="qRecordsByLanguage" datasource="db_computerScience" username="mike" password="mySQL4webDev">
 			SELECT firstName, lastName, programmingLanguage
 			FROM programmers
-			WHERE programmingLanguage LIKE <cfqueryparam value="#arguments.programmingLanguage#" cfsqltype="cf_sql_varchar" />
+			WHERE programmingLanguage LIKE <cfqueryparam value="#arguments.programmingLanguage#%" cfsqltype="cf_sql_varchar" />
 			
 		</cfquery>
 		<cfreturn qRecordsByLanguage />

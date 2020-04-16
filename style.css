@@ -1,0 +1,23 @@
+	body {
+		font-family: Arial;
+	}
+	
+	.button {
+		border-radius: 6px;
+		padding: 5px;
+		margin: 5px;
+		border: 1px solid grey;
+		box-shadow: 6px 8px 14px -4px rgba(9,99,168,0.5);
+
+	}
+	
+	.container {
+		background-color: lightblue;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 6px;
+	}
+		
+	td {
+		padding: 10px;
+	}
